@@ -6,6 +6,8 @@ const app = express()
 const port = 3000
 
 
+app.use(express.static("public"));
+//server need this to serve static files like css whereas bootstrap is remote
 
 app.get("/",function(req,res){
 
